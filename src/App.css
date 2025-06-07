@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background: #181818 url('https://www.transparenttextures.com/patterns/old-mathematics.png'); /* subtle vintage texture */
+  color: #f7e7b2;
+  font-family: 'Pirata One', 'Segoe Script', 'Segoe UI', 'Arial', serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  background: #222 url('https://www.transparenttextures.com/patterns/wood.png'); /* Changed to a different wood texture */
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0008;
+  padding: 32px 24px;
+  margin-top: 32px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h1, h2, h3 {
+  color: #ffd700;
+  text-shadow: 1px 2px 8px #000a;
+  font-family: 'Pirata One', 'Segoe Script', 'Segoe UI', serif;
+  letter-spacing: 1px;
+}
+
+nav {
+  background: #2a2a1f;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0006;
+  padding: 12px 24px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+nav button {
+  background: #b8860b;
+  color: #fffbe6;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-family: 'Pirata One', 'Segoe Script', serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0004;
+}
+nav button:hover {
+  background: #ffd700;
+  color: #222;
+  box-shadow: 0 4px 16px #b8860b88;
+}
+
+.treasure-banner {
+  background: url('https://cdn.pixabay.com/photo/2017/01/31/13/14/banner-2028010_1280.png') center/contain no-repeat;
+  min-height: 60px;
+  margin-bottom: 24px;
+}
+
+.treasure-card {
+  background: #23231a url('https://www.transparenttextures.com/patterns/wood.png'); /* Changed to a different wood texture */
+  border: 3px double #b8860b;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  padding: 22px 18px 18px 18px;
+  box-shadow: 0 2px 12px #0006;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.treasure-card:hover {
+  box-shadow: 0 6px 24px #ffd70088;
+}
+
+.treasure-pin {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  background: url('https://cdn-icons-png.flaticon.com/512/854/854878.png') center/cover no-repeat;
+  filter: drop-shadow(0 2px 4px #0008);
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 12px 2vw;
+    margin-top: 12px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 8px;
+  }
+}
+
+/* Sparkling coin animation */
+@keyframes sparkle {
+  0%, 100% { opacity: 1; filter: brightness(1.2); }
+  50% { opacity: 0.7; filter: brightness(2); }
+}
+.sparkle {
+  animation: sparkle 1.2s infinite;
+}
+
+/* Hide Vite/React demo */
+.card, .read-the-docs, .logo {
+  display: none !important;
+}
+
+/* Treasure map font (optional, fallback to Segoe UI) */
+.TreasureFont, h1, h2, h3 {
+  font-family: 'Pirata One', 'Treasure Map Deadhand', 'Segoe UI', serif;
+}
+
+/* Spot cards */
+li {
+  background: #23231a;
+  border: 2px solid #b8860b;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  padding: 18px 16px;
+  box-shadow: 0 2px 12px #0006;
+}
+
+label {
+  color: #ffd700;
+}
+
+::-webkit-scrollbar {
+  background: #181818;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8860b;
+  border-radius: 8px;
+}
