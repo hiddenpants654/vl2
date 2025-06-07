@@ -1,13 +1,5 @@
-# Locals Spots Marketplace
 
-This project is a modern web application where verified locals can earn money by selling access to their local spots. The goal is to provide authentic recommendations from locals, avoiding tourist traps and generic reviews.
 
-## Features
-- **User Authentication:** Locals and buyers can sign up and log in.
-- **Local Spot Listings:** Locals can list unique spots (e.g., places to eat, outdoor activities, fishing spots, hidden gems) with categories.
-- **Paid Unlock:** Buyers pay a flat fee to unlock spot details.
-- **Subscription for Locals:** Locals pay a subscription fee to list spots after verification.
-- **Modern UI:** Built with React, TypeScript, and Vite for a fast, beautiful experience.
 
 ## Getting Started
 
