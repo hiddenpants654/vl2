@@ -6,6 +6,8 @@
   "homepage": "https://hiddenpants654.github.io/vl2",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
