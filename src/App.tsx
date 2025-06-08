@@ -2,6 +2,7 @@ import { AuthProvider, AuthUI } from './auth';
 import SpotList from './SpotList';
 import React, { useState } from 'react';
 import './App.css'
+import LandingMap from './LandingMap';
 
 // Navigation component
 const Nav: React.FC<{ page: string; setPage: (p: string) => void }> = ({ page, setPage }) => (
@@ -20,9 +21,7 @@ const Landing: React.FC = () => (
     <p style={{ fontSize: 20, maxWidth: 600, margin: '0 auto' }}>
       Our mission: Connect travelers and locals by sharing authentic, off-the-map spots. No tourist traps, just real recommendations from real locals. Unlock unique places to eat, explore, and experience—directly from those who know best.
     </p>
-    <div style={{ margin: '32px auto', maxWidth: 600 }}>
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Treasure Map" style={{ width: '100%', borderRadius: 16, boxShadow: '0 4px 24px #0008' }} />
-    </div>
+    <LandingMap />
   </section>
 );
 

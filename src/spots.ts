@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 // Types and mock data for local spots
 export type SpotCategory =
   | 'places-to-eat'
@@ -26,6 +28,9 @@ export interface LocalSpot {
   rating?: number; // average rating
   unlocks: number;
 }
+
+// API base URL
+const API_URL = 'http://localhost:4000/api';
 
 // Example mock data
 export const mockSpots: LocalSpot[] = [
@@ -200,3 +205,14 @@ export const mockSpots: LocalSpot[] = [
     unlocks: 30,
   },
 ];
+
+// Example: fetch spots from backend
+export async function fetchSpots() {
+  const res = await axios.get(`${API_URL}/spots`);
+  return res.data;
+}
+
+export async function fetchUsers() {
+  const res = await axios.get(`${API_URL}/users`);
+  return res.data;
+}
